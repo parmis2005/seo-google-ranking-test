@@ -566,13 +566,31 @@ h3 {
   margin-bottom: 2.4rem;
 }
 
+.timeline-section .section-head {
+  max-width: 72rem;
+}
+
+.timeline-section .section-head h2 {
+  max-width: none;
+}
+
 .section-head p:last-child {
   margin-bottom: 0;
 }
 
 .faq-section .section-head h2 {
-  max-width: 14ch;
+  max-width: none;
+  white-space: nowrap;
+  font-size: clamp(1.6rem, 2.2vw, 2.35rem);
+  line-height: 1.12;
   margin-bottom: 0.35rem;
+}
+
+@media (max-width: 1040px) {
+  .faq-section .section-head h2 {
+    white-space: normal;
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+  }
 }
 
 .service-grid,
